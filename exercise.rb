@@ -185,3 +185,23 @@ print "#{((1..50).to_a.map {|num| (Array.new(3, num )) }).flatten}\n"
 # 6. Make a new array out all of the countries from the hash in Exercise 6 that are not islands. Print out both arrays.
 #make 3 array, join,sort
 print "#{countries.select {|country| country[:is_island] == true}}\n"
+
+# Exercise 8
+# You want to add up your expenses for the year. Create an array of numbers (integers or floats) that represents your expenses, eg:
+# ```
+#  [250, 7.95, 30.95, 16.50]
+# ```
+# Add up the numbers and output the result.
+#
+# Tip: you may need a variable to keep track of the sum total. What value should it start at?
+#
+# Put this code into a method. The method should take an array as an argument and return the sum of the expenses in the array. Call the method twice with different arrays.
+expenses = [5.00,4.50,10.50,20.00]
+expensestwo = [5.20,1.20,13.00,25.13]
+def sum(array)
+  array.reduce(:+)
+end
+puts "The sum is: $#{sum(expenses)}"
+puts "The sum is: $#{sum(expensestwo)}"
+
+#Exercise 9
