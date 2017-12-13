@@ -183,8 +183,9 @@ puts onetofifty.reduce(:+)
 print "#{((1..50).to_a.map {|num| (Array.new(3, num )) }).flatten}\n"
 #   * Ie. ```[1, 1, 1, 2, 2, 2, 3, 3, 3, ... , 50, 50, 50]``` and so on, up to 50.
 # 6. Make a new array out all of the countries from the hash in Exercise 6 that are not islands. Print out both arrays.
-#make 3 array, join,sort
-print "#{countries.select {|country| country[:is_island] == true}}\n"
+print "#{countries}\n"
+only_islands = countries.select {|country| country[:is_island] == true}
+print "#{only_islands}\n"
 
 # Exercise 8
 # You want to add up your expenses for the year. Create an array of numbers (integers or floats) that represents your expenses, eg:
