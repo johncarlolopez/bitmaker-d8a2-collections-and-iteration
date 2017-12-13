@@ -1,7 +1,7 @@
 #Exercise 0
 my_colours = ["blue","grey","black"]
 my_ages = [27,26,25]
-my_coin_flips = ["head","tails","head","tails"]
+my_coin_flips = ["heads","tails","heads","tails"]
 my_performers = ["BTS","Blackpink","Red Velvet"]
 my_colours_symbols = [:blue,:grey,:black]
 
@@ -16,9 +16,9 @@ my_movies = {
   "Harry Potter" => "2001"
 }
 my_cities = {
-  "Tokyo, Japan" => 38140000,
-  "Beijing, China" => 21240000,
-  "Mumbai, India" => 21357000
+  "Tokyo" => 38140000,
+  "Beijing" => 21240000,
+  "Mumbai" => 21357000
 }
 my_relatives = {
   "Bob" => 27,
@@ -75,3 +75,32 @@ my_movies["Beauty and the Beast"] = [1991,2017]
 puts "#{my_movies["Beauty and the Beast"]}"
 
 # Exercise 4
+# 1. Print out all of the ages of your friends/family that are less than 30 (or any number where some ages will not be printed!).
+# ages = []
+# my_ages.each do |age|
+#   if age < 27
+#     ages << age
+#   end
+# end
+# print "#{ages}\n"
+print "#{my_ages.select {|age| age < 27}}\n"
+# much better way of doing selection
+# 2. Find and output the age of the oldest person in your friends/family array.
+print "#{my_ages.max}\n"
+# 3. Count how many times you flipped 'heads' using the coin flips array.
+# count = 0
+# my_coin_flips.each do |coin|
+#   puts coin.to_s.downcase
+#   if coin.to_s.downcase == "heads"
+#     count +=1
+#   end
+# end
+# puts count
+print "#{(my_coin_flips.select {|coin| coin == "heads"}).count}\n"
+# more concise way
+# 4. You realize one of the performing artists in your list is no longer a favourite. Remove one of them from the array.
+my_performers.pop
+# 5. Pick a city in your city population hash and change its population.
+my_cities["Beijing"] = 21240001
+
+#Exercise 5
