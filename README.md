@@ -54,14 +54,14 @@ Note: this should work for an array of any size!
 
 ### Exercise 3
 ___
-Print out the first two performing artists in that array.
-For each of your favourite movies, print out a sentence about when the movie was released. For example:
-Avatar came out in 2009.
-Mean Girls came out in 2004.
-The Matrix came out in 1999.
-Sort and reverse the array of ages of your family. Save it and print it to the screen.
-See if you can sort and reverse the array on one line!
-Add "Beauty and the Beast" movie to your hash of movies information, but with a twist: the movie was released both in 1991 and in 2017. Print it out.
+1. Print out the first two performing artists in that array.
+2. For each of your favourite movies, print out a sentence about when the movie was released. For example:
+  * Avatar came out in 2009.
+  * Mean Girls came out in 2004.
+  * The Matrix came out in 1999.
+3. Sort and reverse the array of ages of your family. Save it and print it to the screen.
+  * See if you can sort and reverse the array on one line!
+4. Add "Beauty and the Beast" movie to your hash of movies information, but with a twist: the movie was released both in 1991 and in 2017. Print it out.
 
 
 ### Exercise 4
