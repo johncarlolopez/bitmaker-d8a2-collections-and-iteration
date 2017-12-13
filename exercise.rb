@@ -104,3 +104,30 @@ my_performers.pop
 my_cities["Beijing"] = 21240001
 
 #Exercise 5
+
+# 1. Find the sum total of the population in the hash of cities.
+puts my_cities.values.reduce(:+)
+#combines all element in an array with binary operator, in this case + . :symbol is used to denote using actual operator and not just string
+#works with alias .inject as well
+# 2. Using your hash containing the names of your family and friends with their ages, print out one of two messages for each depending on their age. For example:
+#   * Martha is old.
+#   * Stewart is young.
+#   * Holly is young.
+my_relatives.each do |name,age|
+  if age >= 27
+    puts "#{name} is old"
+  else
+    puts "#{name} is young"
+  end
+end
+# 3. Print out the last two colours in your array of favourite colours.
+print "#{my_colours[-2..-1]}\n"
+# 4. Increase by 1 the age of everyone in your array of ages. Print it out.
+print "#{my_ages.map {|age| age + 1}}\n"
+# 5. Add two new colours to your array of favourite colours.
+# my_colours << "purple"
+# my_colours << "yellow"
+my_colours.insert(-1,"purple","yellow")
+#adds to the end but also allows to insert multiple
+
+# Exercise 6
