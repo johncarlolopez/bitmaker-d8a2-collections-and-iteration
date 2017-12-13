@@ -210,9 +210,6 @@ You will need:
 
 to ask the user for input twice.
 a loop of some kind.
-to make sure your variables are what you think they are! Convert them to integers if needed.
-string interpolation
-In this example the string "Chunky bacon!" will be printed 3 times and the block of code specified was puts "Chunky bacon!".
 
 ## Bonus
 ___
