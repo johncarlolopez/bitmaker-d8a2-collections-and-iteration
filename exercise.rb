@@ -1,3 +1,4 @@
+#Exercise 0
 my_colours = ["blue","grey","black"]
 my_ages = [27,26,25]
 my_coin_flips = ["head","tails","head"]
@@ -24,3 +25,15 @@ my_relatives = {
   "Joe" => 26,
   "Jane" => 25
 }
+#Exercise 1
+# 1. Print out the array of coin flips.
+puts my_coin_flips
+# 2. Print out the first element of the array of your favourite colours.
+puts my_colours.first
+# 3. Output the sorted version of the array of your friends and family members' ages.
+puts my_ages.sort
+# 4. Add a new baby (0 years old) to the array of your family's ages.
+my_ages << 0
+puts my_ages
+# 5. Using the hash of movie information, access and print the year of one of the movies.
+puts my_movies["Star Wars"]
