@@ -180,3 +180,106 @@ cohort3: 22 students
 8. BONUS: Create another similar hash called ```staff``` and ```display``` it using the display method from above.
 
 After you're done, be sure you have committed and pushed everything to your Github repo.
+
+### Exercise 11
+___
+Let's do our own Bitmaker version of [FizzBuzz](http://en.wikipedia.org/wiki/Fizz_buzz), which is the name of a classic job interview coding problem.
+
+Write a program in a file called **exercise10.rb** that loops over the numbers from 1 to 100. If the number is a multiple of three, output the string "Bit". For multiples of five, output "Maker". For numbers which are multiples of both three and five, output "BitMaker". Otherwise output the number itself.
+
+To solve this problem you will likely need to search the web. Start with the particular aspect of the question you are unsure of, such as "how to check if a number is a multiple of another in ruby". Do use online resources, but do not read or copy an entire solution to the problem. Make sure the code you submit is your own. You will learn much more if you work through it yourself!
+
+As always, don't forget to commit your work as you make progress.
+
+### Exercise 12
+___
+PizzaMaker wants to handle bulk orders of pizzas, with varying amounts of toppings on each. Ask the user for a number of pizzas - call it quantity. We then want to ask the user for quantity more numbers - the number of toppings on that pizza - and print them out as in the following example.
+
+How many pizzas do you want to order?
+$ 3
+How many toppings for pizza 1?
+$ 5
+You have ordered a pizza with 5 toppings.
+How many toppings for pizza 2?
+$ 1
+You have ordered a pizza with 1 toppings.
+How many toppings for pizza 3?
+$ 4
+You have ordered a pizza with 4 toppings.
+You will need:
+
+to ask the user for input twice.
+a loop of some kind.
+to make sure your variables are what you think they are! Convert them to integers if needed.
+string interpolation
+In this example the string "Chunky bacon!" will be printed 3 times and the block of code specified was puts "Chunky bacon!".
+
+## Bonus
+**___**
+### Stretch Exercise
+___
+Note: Some of the questions below introduce new code. If you are unable to answer these, don't worry!
+
+Make a new array that consists of all the elements of your fav_colours and fav_artists arrays. Then sort the array and output it.
+
+Eg. ['Blue', 'Led Zeppelin', 'Pink', 'Pink Floyd', 'Stevie Wonder', 'Yellow']
+Using the array of ages and the array of favourite artists, output a message for each pair of items. For example:
+
+I <3 Green Day 75
+I <3 Green Day 24
+...
+I <3 Led Zeppelin 75
+I <3 Led Zeppelin 24
+...
+One year has gone by. Use map to create a new array of the ages of your friends/relatives where all of the ages are increased by 1. Output the result.
+
+Use reduce to add up the numbers in your ages array. Print the total sum as a sentence using string interpolation.
+
+Use select on your coin_flips array to make a new array that only includes the coin flips that successfully landed on 'heads'.
+
+Stretch Exercise
+
+You have three dogs and you want to keep track of them. Sometimes they like to dig under your fence and explore the neighbourhood.
+
+Your backyard is 10 metres deep. You need to call their name if they leave your backyard (ie. if their position is greater than 10).
+
+Create an array of dogs as follows:
+
+my_dogs = [
+  { :name => 'Ralph', :position => 5 },
+  { :name => 'Cindy', :position => 8 },
+  { :name => 'Jade', :position => 11 },
+]
+Notice that each 'dog' is actually a hash - a set of key value pairs. The two keys we need for each dog are :name and :position.
+
+Figure out which dogs have left the backyard. Write a method called get_absent_dogs that takes an array of dogs (hashes) as an argument and returns an array of dogs (that are absent).
+
+Call the dogs that are absent. Write a method called call_absent_dogs. It should take an array of dogs as an argument. It does not need to return anything, but should instead output the name of each dog that is missing. For example, for a dog named Izzy, "Come back, Izzy!".
+
+How will this method know which dogs are absent?
+Your neighbour has also asked you to watch over her dogs. Make another array of dogs. Add another array of dogs similar to the previous one. Call the method call_absent_dogs with each set of dogs.
+
+This problem emphasizes the need to break down problems into smaller parts. Always try to solve one problem at a time.
+
+### Stretch Exercise
+___
+This exercise is more advanced, and should only be tackled if you are comfortable with .each.
+
+Let's learn more about arrays! We've been iterating over arrays using my_array.each. This is okay, but sometimes there are more specific ways to iterate.
+
+Take a look at select. It allows you to filter down an array by some condition.
+
+Refactor the get_absent_dogs method from the previous exercise to use the select method instead of each.
+Now let's look at map (the same as collect). Given an array, it will return a new array with the same number of items, where each item has had some kind of operation performed on it. Example:
+
+numbers = [1, 2, 3, 4, 5]
+new_numbers = numbers.map do |num|
+  num * 2
+end
+puts new_numbers # [2, 4, 6, 8, 10]
+Your dogs all see a squirrel and chase it. Increase their position values by 5 using Array.map!.
+
+Note that .map! will modify the array you are using (presumably my_dogs) rather than returning a new one with .map.
+Now create a method called chase_squirrel that handles this. It should take an array of dogs as an argument and add 5 to the position of each dog.
+
+Write a new method called return_dogs that takes an array of dogs as an argument. It should reset all of the dogs' positions back to 0.
