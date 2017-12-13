@@ -111,9 +111,9 @@ ___
 ### Exercise 8
 ___
 You want to add up your expenses for the year. Create an array of numbers (integers or floats) that represents your expenses, eg:
-
-[250, 7.95, 30.95, 16.50]
-
+```
+ [250, 7.95, 30.95, 16.50]
+```
 Add up the numbers and output the result.
 
 Tip: you may need a variable to keep track of the sum total. What value should it start at?

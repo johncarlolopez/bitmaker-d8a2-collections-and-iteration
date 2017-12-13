@@ -163,3 +163,25 @@ countries = [
 ]
 
 # Exercise 7
+
+# 1. Output the message "I will not skateboard in the halls" 20 times.
+20.times {puts "I will not skateboard in the halls"}
+# 2. Create an array consisting of the above message. It should appear in the array 20 times.
+# detention = []
+# 20.times {detention << "I will not skateboard in the halls"}
+detention = Array.new(20, "I will not skateboard in the halls")
+# a simpler way to do the same command but utilizing the Array.new
+# 3. Create an array consisting of the numbers between 1 and 50.
+onetofifty = (1..50).to_a
+# 4. Use an each loop to find the sum of the numbers in the above array.
+puts onetofifty.reduce(:+)
+# 5. Create a new array which has three of each number up to 50.
+# tripleonefifty = []
+# (1..50).to_a.each {|num| tripleonefifty.insert(Array.new(3, num )) }
+# tripleonefifty.flatten!
+# puts tripleonefifty
+print "#{((1..50).to_a.map {|num| (Array.new(3, num )) }).flatten}\n"
+#   * Ie. ```[1, 1, 1, 2, 2, 2, 3, 3, 3, ... , 50, 50, 50]``` and so on, up to 50.
+# 6. Make a new array out all of the countries from the hash in Exercise 6 that are not islands. Print out both arrays.
+#make 3 array, join,sort
+print "#{countries.select {|country| country[:is_island] == true}}\n"
