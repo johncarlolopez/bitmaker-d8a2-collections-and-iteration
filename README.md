@@ -66,11 +66,11 @@ ___
 
 ### Exercise 4
 ___
-Print out all of the ages of your friends/family that are less than 30 (or any number where some ages will not be printed!).
-Find and output the age of the oldest person in your friends/family array.
-Count how many times you flipped 'heads' using the coin flips array.
-You realize one of the performing artists in your list is no longer a favourite. Remove one of them from the array.
-Pick a city in your city population hash and change its population.
+1. Print out all of the ages of your friends/family that are less than 30 (or any number where some ages will not be printed!).
+2. Find and output the age of the oldest person in your friends/family array.
+3. Count how many times you flipped 'heads' using the coin flips array.
+4. You realize one of the performing artists in your list is no longer a favourite. Remove one of them from the array.
+5. Pick a city in your city population hash and change its population.
 
 ### Exercise 5
 ___
