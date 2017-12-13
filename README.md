@@ -215,7 +215,7 @@ string interpolation
 In this example the string "Chunky bacon!" will be printed 3 times and the block of code specified was puts "Chunky bacon!".
 
 ## Bonus
-**___**
+___
 ### Stretch Exercise
 ___
 Note: Some of the questions below introduce new code. If you are unable to answer these, don't worry!
