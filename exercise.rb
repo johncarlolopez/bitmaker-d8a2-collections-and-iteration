@@ -245,3 +245,24 @@ printer(grocery_list)
 grocery_list.delete("salmon")
 printer(grocery_list)
 # After you're done, be sure you have everything committed and pushed to your github repo.
+
+#Bonus
+puts "*** Bonus ***"
+# 1
+my_colours_and_artists = my_colours + my_performers
+my_colours_and_artists.sort!
+print "#{my_colours_and_artists}\n"
+# 2
+my_performers.each {|name|
+  my_ages.each {|age|
+    puts "I <3 #{name} #{age}"
+  }
+}
+# 3
+my_ages.map! {|age| age += 1}
+print "#{my_ages}\n"
+# 4
+puts my_ages.reduce(:+)
+#5
+coin_heads = my_coin_flips.select { |e| e == "heads" }
+p coin_heads

@@ -211,3 +211,28 @@ You will need:
 
   * to ask the user for input twice.
   * a loop of some kind.
+
+## Bonus
+___
+### Stretch Exercise
+___
+  Note: Some of the questions below introduce new code. If you are unable to answer these, don't worry!
+
+  1. Make a new array that consists of all the elements of your fav_colours and fav_artists arrays. Then sort the array and output it.
+```
+  Eg. ['Blue', 'Led Zeppelin', 'Pink', 'Pink Floyd', 'Stevie Wonder', 'Yellow']
+```
+  2. Using the array of ages and the array of favourite artists, output a message for each pair of items. For example:
+```
+  * I <3 Green Day 75
+  * I <3 Green Day 24
+  ...
+  * I <3 Led Zeppelin 75
+  * I <3 Led Zeppelin 24
+  ...
+```
+  3. One year has gone by. Use map to create a new array of the ages of your friends/relatives where all of the ages are increased by 1. Output the result.
+
+  4. Use reduce to add up the numbers in your ages array. Print the total sum as a sentence using string interpolation.
+
+  5. Use select on your coin_flips array to make a new array that only includes the coin flips that successfully landed on 'heads'.
